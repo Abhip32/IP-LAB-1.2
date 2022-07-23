@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T-Shirt Order Form</title>
+</head>
+<body>
+  <center>
+<form action="" enctype="multipart/form-data" method="put">
+  <fieldset>
+<h2>Your Order Details</h2>
+<p>Order:</p>
+<img width="250px" src="https://cdn.pixabay.com/photo/2016/03/16/21/43/t-shirt-1261820__340.png" alt=""><br><br>
+
+<label for="tagline">Enter Tagline:</label><br>
+<input type="text" name="tagline" id="tagline"><br><br>
+
+<label for="color">Choose Color:</label><br>
+<input type="radio" id="red" name="color" value="Red">
+<label for="red">Red</label><br>
+<input type="radio" id="white" name="color" value="White">
+<label for="white">Green</label><br>
+<input type="radio" id="blue" name="color" value="blue">
+<label for="blue">Blue</label><br>
+<input type="radio" id="blue" name="color" value="blue">
+<label for="blue">Cyan</label><br>
+<input type="radio" id="blue" name="color" value="blue">
+<label for="blue">Orange</label><br>
+<input type="radio" id="blue" name="color" value="blue">
+<label for="blue">Pink</label><br><br>
+
+<label for="birthday">Date of Delivery:</label>
+<input type="date" id="DateOfDelivery" name="DateOfDelivery">
+<br><br>
+
+<label for="size">Select Size:</label><br>
+<select id="size" name="size">
+<option value="25">25</option>
+<option value="30">30</option>
+<option value="35">35</option>
+<option value="40">40</option>
+</select><br><br>
+
+<label for="quantity">Quantity: </label><br>
+<select id="quantity" name="quantity">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="4">5</option>
+<option value="4">6</option>
+<option value="4">7</option>
+<option value="4">8</option>
+</select><br><br>
+
+<label for="price">Total Order Price: <strong>100.49$</strong></label><br><br>
+
+<label for="payment_options">Payment Options:</label><br>
+<input type="radio" id="cc" name="payment" value="Credit/Debit Card">
+<label for="cc">Credit/Debit Card</label><br>
+<input type="radio" id="upi" name="payment" value="UPI">
+<label for="upi">UPI</label><br>
+<input type="radio" id="crypto" name="payment" value="Crypto">
+<label for="crypto">Crypto-Wallet</label><br>
+<input type="radio" id="paypal" name="payment" value="Paypal">
+<label for="crypto">Paypal</label><br><br>
+
+<label for="Address">Delivery Address :</label>
+<br>
+<textarea type="textarea" id="address" name="Address" placeholder="Enter your Delivery Address">
+</textarea>
+<br><br>
+
+
+<label for="address">Address of Shipper:</label><br>
+<p>1234 RockPort<br>
+SanAndreas, LA - 02138</p>
+<button type="submit">Place Order</button>
+</fieldset>
+</form>
+</center>
+</body>
+</html>
