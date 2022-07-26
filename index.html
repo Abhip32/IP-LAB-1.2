@@ -14,7 +14,7 @@
 <img width="250px" src="https://cdn.pixabay.com/photo/2016/03/16/21/43/t-shirt-1261820__340.png" alt=""><br><br>
 
 <label for="tagline">Enter Tagline:</label><br>
-<input type="text" name="tagline" id="tagline" placeholder="Enter Tagline Here"><br><br>
+<input type="text" name="tagline" id="tagline" placeholder="Enter Tagline Here" required maxlength = "10"><br><br>
 
 <label for="color">Choose Color:</label><br>
 <input type="radio" id="red" name="color" value="Red">
@@ -31,15 +31,15 @@
 <label for="blue">Pink</label><br><br>
 
 <label for="birthday">Date of Delivery:</label>
-<input type="date" id="DateOfDelivery" name="DateOfDelivery">
+<input type="date" id="DateOfDelivery" name="DateOfDelivery" required>
 <br><br>
     
 <label for="email">Enter your email:</label>
-<input type="email" id="email" name="email" placeholder="Enter your email">
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
 <br><br>
 
 <label for="size">Select Size:</label><br>
-<select id="size" name="size">
+<select id="size" name="size" required>
 <option value="25">25</option>
 <option value="30">30</option>
 <option value="35">35</option>
@@ -47,7 +47,7 @@
 </select><br><br>
 
 <label for="quantity">Quantity: </label><br>
-<select id="quantity" name="quantity">
+<select id="quantity" name="quantity" required>
 <option value="1">1</option>
 <option value="2">2</option>
 <option value="3">3</option>
@@ -72,7 +72,7 @@
 
 <label for="Address">Delivery Address :</label>
 <br>
-<textarea type="textarea" id="address" name="Address" placeholder="Enter your Delivery Address">
+<textarea type="textarea" id="address" name="Address" placeholder="Enter your Delivery Address" required>
 </textarea>
 <br><br>
 
