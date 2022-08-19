@@ -6,10 +6,147 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./style.css" type="text/css"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  :root{
+    --body-font-family: 'DM Sans', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--body-font-family); 
+}
+
+input{
+    padding: 1%;
+}
+
+input:focus {
+    background-color: greenyellow;
+  }
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 2%;
+}
+
+input[type = submit]{
+    padding: 1%;
+    color: white;
+    width: 20%;
+    border-radius: 20px;
+    background-color: royalblue;
+    margin-left: 50px;
+}
+
+
+input[type = file]{
+    padding: 1%;
+    color: white;
+    width: 30%;
+    border-radius: 20px;
+    background-color: black;
+}
+
+input[type = color]{
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    
+}
+
+.OrderForm{
+    display: flex;
+}
+
+.OrderForm .order-details{
+    background-color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    border: 1px solid black;
+    width: 40%;
+    padding: 2%;
+}
+
+.order-preview{
+    padding: 10%;
+}
+
+.OrderForm .order-details #genericmenu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+    padding: 2%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.genericmenu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+   
+    padding: 2%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.genericmenu2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   
+    padding: 2%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+label{
+    font-weight: bolder;
+}
+
+
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 35px;
+  margin-right: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: white;
+}
+.fa-linkedin {
+  background: #003257;
+  color: white;
+}
+
+</style>
 <title>T-Shirt Order Form</title>
 </head>
-<body>
+<body style="background-image: linear-gradient(180deg,#FBD3E9,#BB377D);">
   <nav>
     <h1>Your Cart</h1>
   </nav>
@@ -118,7 +255,23 @@
       <label for="address">Address of Shipper:</label><br>
       <p>1234 RockPort<br>
       SanAndreas, LA - 02138</p>
-      <center><button type="submit" onclick="alert('Your Form Got Submitted')">Place Order</button></center>
+      <center><button type="submit" onclick="alert('Your Form Got Submitted')" 
+      style=" margin: 30px;
+        padding: 10px;
+        width: 200px;
+        background-color: royalblue;
+        border-radius: 20px;
+        font-weight: bold;
+        color: white;">Place Order</button></center>
+        <br/>
+        <br/>
+        <h2>Connect With Us</h2>
+        <br/>
+
+      <a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-linkedin"></a>
   
       </form>
     </div>
